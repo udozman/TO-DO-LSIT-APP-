@@ -40,6 +40,7 @@ const clickEvent = function () {
     tasks.forEach((task, i) => {
       checkBoxes[i].addEventListener('click', function(){
         task.classList.add('strike-through');
+        task.style.backgroundColor = '#c4cfc7';
         this.style.fill = '#00ff40';
       })
     for(let i = 0; i < tasks.length; i++){
