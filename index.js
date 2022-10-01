@@ -4,10 +4,42 @@ const itemBox = document.querySelector('.to-do-items');
 const btn = document.getElementById('btn');
 const itemContainer = document.querySelector('.to-do-container');
 const input = document.querySelector('#input');
-
+const date = document.querySelector('.day');
 const checkBox = document.querySelector('.check');
 const textBox = document.querySelector('.text');
+///////////Getting the day of the week/////
+const d = new Date;
+let day = d.getDay();
+let dayOfTheWeek;
+switch (day) {
+  case 0:
+    dayOfTheWeek = "Sunday";
+    break;
+  case 1:
+    dayOfTheWeek = "Monday";
+    break;
+    case 2:
+      dayOfTheWeek = "Tuesday";
+      break;
+      case 3:
+        dayOfTheWeek = "Wednesday";
+        break;
+        case 4:
+          dayOfTheWeek = "Thursday";
+          break;
+          case 5:
+            dayOfTheWeek = "Friday";
+            break;
+            case 6:
+              dayOfTheWeek = "Saturday";
+              break;
+              default:
+}
+///////Inserting the day of the week into the h3 element//////
+date.textContent = dayOfTheWeek;
 
+
+///////////////////////Function for input submission//////////
 const clickEvent = function () {
   if(document.getElementById('input').value){
     const newTask = document.getElementById('input').value;
