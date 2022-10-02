@@ -16,14 +16,9 @@ html {
     html {
       font-size: 50%; } }
   @media (max-width: 37.5em) {
-    html {
-      font-size: 40%;
-    }
       .nav{
         flex-direction: column;
-      }
-      .input{
-        width: 100rem;
+        gap: 2rem;
       }
      }
 body{
@@ -103,5 +98,4 @@ padding: .8rem .5rem
 }
 .day{
   letter-spacing: .2rem;
-  font-size: 2.2rem;
 }
