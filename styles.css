@@ -12,9 +12,11 @@ html {
 @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
+
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+
   @media (max-width: 37.5em) {
       .nav{
         flex-direction: column;

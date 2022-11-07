@@ -64,6 +64,7 @@ const clickEvent = function () {
     </div>`;
 
     itemContainer.insertAdjacentHTML('beforeend', html);
+    document.getElementById('input').value = "";
     // console.log(document.querySelectorAll('.to-do-items').length);
     const checkBoxes = document.querySelectorAll('.check');
     const deleteIcons = document.querySelectorAll('.delete');
